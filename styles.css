@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-      margin: 10rem auto;
+      margin: 10rem auto 1rem;
       max-width: 27rem;
       background: rgb(255, 255, 255);
       border-radius: 1rem;
@@ -56,7 +56,7 @@ body {
 }
 
 .publish {
-      margin: 1rem 1.5rem 1rem;
+      margin: 1rem 1.5rem;
       font-size: 107%;
       font-weight: 600;
 }
@@ -84,22 +84,51 @@ a:hover {
       color: rgb(100, 100, 100);
 }
 
-.footer {
+.bottom {
       margin: 1.5rem 1.5rem 1rem;
       display: flex;
-      padding: 0rem 0rem;
+      padding: 0rem;
 }
 
-.footer img {
+.bottom img {
      width: 12%;
      height: 12%; 
 }
 
-.footer p {
+.bottom p {
       padding-left: 1rem;
       padding-top: 0.6rem;
       font-family: 'figtree-extrabold';
       font-weight: bolder;
+}
+
+.wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.container-footer {
+      max-width: 25rem;
+      margin: 1rem auto;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+}
+
+.container-footer p {
+      padding: 0rem 0.5rem;
+      font-size: small;
+}
+
+.container-footer p a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+}
+
+.container-footer p a:hover {
+      text-decoration: underline;
 }
 
 @media (min-width: 0px) and (max-width: 599px) {
@@ -140,17 +169,32 @@ a:hover {
             padding: 0rem;
       }
 
-      .footer {
+      .bottom {
             display: flex;
             margin: 0.7rem 0.5rem;
             padding: 0rem;
       }
       
-      .footer p {
+      .bottom p {
             padding-left: 0.3rem;
             padding-top: 0.35rem;
             font-family: 'figtree-extrabold';
             font-weight: bolder;
             font-size: 55%;
       }
+
+      .container-footer {
+            display: block;
+            margin: 0rem;
+      }
+
+      .container-footer p {
+            padding: 0.2rem;
+            font-size: 50%;
+      }
+
+      .container-footer p a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
 }

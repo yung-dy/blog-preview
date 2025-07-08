@@ -1,0 +1,156 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'figtree', sans-serif;
+}
+
+@font-face {
+      font-family: 'figtree';
+      src: url('assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+@font-face {
+      font-family: 'figtree-extrabold';
+      src: url('assets/fonts/static/Figtree-ExtraBold.ttf');
+}
+
+body {
+      background: rgb(255, 216, 86);
+      color: black;
+}
+
+.container {
+      margin: 10rem auto;
+      max-width: 27rem;
+      background: rgb(255, 255, 255);
+      border-radius: 1rem;
+      outline: 1px solid black;
+      box-shadow: 10px 10px;
+      padding-bottom: 0.3rem;
+}
+
+.illustration-article img {
+      width: 100%;
+      display: block;
+      height: auto;
+      border-radius: 2rem;
+      padding: 1.5rem;
+}
+
+.learn-container {
+      background: rgb(255, 208, 53);
+      display: block;
+      max-width: 22%;
+      color: black;
+      margin: 0rem 1.5rem;
+      border-radius: 0.3rem;
+}
+
+.learn-container p {
+      padding: 0.3rem 0rem;
+      font-size: 110%;
+      text-align: center;
+      font-family: 'figtree-extrabold', sans-serif;
+      font-weight: 800;
+}
+
+.publish {
+      margin: 1rem 1.5rem 1rem;
+      font-size: 107%;
+      font-weight: 600;
+}
+
+h1 {
+      margin: 0rem 1.5rem 1.1rem;
+      font-family: 'figtree-extrabold';
+      font-size: 182%;
+}
+
+a {
+      text-decoration: none;
+      color: black;
+}
+
+a:hover {
+      color: rgb(233, 198, 2);
+      transition: all 1s ease-in;
+}
+
+.about {
+      padding: 0rem 1.5rem;
+      line-height: 1.5;
+      font-size: 120%;
+      color: rgb(100, 100, 100);
+}
+
+.footer {
+      margin: 1.5rem 1.5rem 1rem;
+      display: flex;
+      padding: 0rem 0rem;
+}
+
+.footer img {
+     width: 12%;
+     height: 12%; 
+}
+
+.footer p {
+      padding-left: 1rem;
+      padding-top: 0.6rem;
+      font-family: 'figtree-extrabold';
+      font-weight: bolder;
+}
+
+@media (min-width: 0px) and (max-width: 599px) {
+      .container {
+            margin: 1rem;
+            box-shadow: 5px 5px;
+            border-radius: 0.5rem;
+      }
+
+      .illustration-article img {
+            padding: 0.5rem;
+            border-radius: 0.8rem;
+      }
+
+      .learn-container {
+            margin: 0.5rem;
+            border-radius: 0.2rem;
+            max-width: 3.2rem;
+      }
+
+      .learn-container p {
+            font-size: 50%;
+      }
+
+      .publish {
+            margin: 0.5rem;
+            font-size: 50%;
+      }
+
+      h1 {
+            margin: 0.5rem;
+            font-size: 75%;
+      }
+
+      .about {
+            margin: 0rem 0.5rem;
+            font-size: 55%;
+            padding: 0rem;
+      }
+
+      .footer {
+            display: flex;
+            margin: 0.7rem 0.5rem;
+            padding: 0rem;
+      }
+      
+      .footer p {
+            padding-left: 0.3rem;
+            padding-top: 0.35rem;
+            font-family: 'figtree-extrabold';
+            font-weight: bolder;
+            font-size: 55%;
+      }
+}

@@ -1,8 +1,17 @@
+:root {
+      --main-color: rgb(255, 216, 86);
+      --text-color: black;
+      --secondary-color: white;
+      --other-color: rgb(255, 208, 53);
+      --font-body: 'figtree', sans-serif;
+      --font-heading: 'figtree-extrabold' sans-serif;
+}
+
 * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'figtree', sans-serif;
+      font-family: var(--font-body);
 }
 
 @font-face {
@@ -16,21 +25,25 @@
 }
 
 body {
-      background: rgb(86, 255, 190);
-      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: var(--main-color);
+      color: var(--text-color);
 }
 
 .container {
       margin: 10rem auto 1rem;
       max-width: 27rem;
-      background: rgb(255, 255, 255);
+      background: var(--secondary-color);
       border-radius: 1rem;
-      outline: 1px solid black;
-      box-shadow: 10px 10px;
+      outline: 1px solid var(--text-color);
+      box-shadow: 10px 10px var(--text-color);
       padding-bottom: 0.3rem;
 }
 
-.illustration-article img {
+.header-img {
       width: 100%;
       display: block;
       height: auto;
@@ -38,24 +51,24 @@ body {
       padding: 1.5rem;
 }
 
-.learn-container {
-      background: rgb(255, 208, 53);
+.header-container {
+      background: var(--other-color);
       display: block;
-      max-width: 22%;
-      color: black;
+      width: 22%;
+      color: var(--text-color);
       margin: 0rem 1.5rem;
       border-radius: 0.3rem;
 }
 
-.learn-container p {
-      padding: 0.3rem 0rem;
-      font-size: 110%;
+.header-container p {
+      padding: 0.5rem 0.8rem;
       text-align: center;
-      font-family: 'figtree-extrabold', sans-serif;
+      font-family: var(--font-heading);
+      font-size: 110%;
       font-weight: 800;
 }
 
-.publish {
+.header-publish {
       margin: 1rem 1.5rem;
       font-size: 107%;
       font-weight: 600;
@@ -63,21 +76,21 @@ body {
 
 h1 {
       margin: 0rem 1.5rem 1.1rem;
-      font-family: 'figtree-extrabold';
+      font-family: var(--font-heading);
       font-size: 182%;
 }
 
 a {
       text-decoration: none;
-      color: black;
+      color: var(--text-color);
 }
 
 a:hover {
-      color: rgb(233, 198, 2);
-      transition: all 1s ease-in;
+      color: var(--other-color);
+      transition: all 3s ease-in;
 }
 
-.about {
+.description {
       padding: 0rem 1.5rem;
       line-height: 1.5;
       font-size: 120%;
@@ -98,7 +111,7 @@ a:hover {
 .bottom p {
       padding-left: 1rem;
       padding-top: 0.6rem;
-      font-family: 'figtree-extrabold';
+      font-family: var(--font-heading);
       font-weight: bolder;
 }
 
@@ -123,7 +136,7 @@ a:hover {
 
 .container-footer p a {
       text-decoration: none;
-      color: rgb(0, 0, 0);
+      color: var(--text-color);
       font-weight: bold;
 }
 
@@ -178,7 +191,7 @@ a:hover {
       .bottom p {
             padding-left: 0.3rem;
             padding-top: 0.35rem;
-            font-family: 'figtree-extrabold';
+            font-family: var(--font-heading);
             font-weight: bolder;
             font-size: 55%;
       }
@@ -195,7 +208,7 @@ a:hover {
 
       .container-footer p a {
             text-decoration: none;
-            color: rgb(0, 0, 0);
+            color: var(--text-color);
             font-weight: bold;
       }
 }

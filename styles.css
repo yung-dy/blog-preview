@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-      margin: auto;
+      margin: 4rem auto;
       max-width: 27rem;
       background: var(--secondary-color);
       border-radius: 1rem;

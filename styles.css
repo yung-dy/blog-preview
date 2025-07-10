@@ -40,7 +40,7 @@ body {
       border-radius: 1rem;
       outline: 1px solid var(--text-color);
       box-shadow: 10px 10px var(--text-color);
-      padding-bottom: 0.3rem;
+      padding-block-end: 0.3rem;
 }
 
 .header-img {
@@ -110,7 +110,7 @@ a:hover {
 }
 
 .bottom p {
-      padding-left: 1rem;
+      padding-inline-start: 1rem;
       padding-top: 0.6rem;
       font-family: var(--font-heading);
       font-weight: bolder;
@@ -149,7 +149,7 @@ a:hover {
       }
 }
 
-@media (min-width: 0px) and (max-width: 599px) {
+@media (min-width: 0em) and (max-width: 37.4375em) {
       .container {
             margin: 1rem;
             box-shadow: 5px 5px;
@@ -195,8 +195,8 @@ a:hover {
       }
       
       .bottom p {
-            padding-left: 0.3rem;
-            padding-top: 0.35rem;
+            padding-inline-start: 0.3rem;
+            padding-block-start: 0.35rem;
             font-family: var(--font-body);
             font-weight: bolder;
             font-size: 55%;

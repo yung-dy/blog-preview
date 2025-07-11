@@ -19,6 +19,7 @@
       --font-xl: clamp(1.4rem, 3vw, 1.82rem);
 
       --radius: 1rem;
+      --radius-bg: 2.25rem;
       --shadow: 10px 10px var(--text-color);
 }
 
@@ -170,59 +171,59 @@ a:hover {
 
 @media (min-width: 0em) and (max-width: 37.4375em) {
       .container {
-            margin: clamp();
+            margin: 0 var(--spacing-lg);
             box-shadow: var(--shadow);
-            border-radius: 0.5rem;
+            border-radius: var(--radius);
       }
 
       .header-img {
-            padding: var(--spacing-sm);
-            border-radius: 0.8rem;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-bg);
       }
 
       .header-container {
-            margin: var(--spacing-sm);
+            margin: 0 var(--spacing-lg);
             border-radius: 0.2rem;
             min-width: 3rem;
       }
 
       .header-container p {
-            font-size: 50%;
+            font-size: var(--font-md);
             padding: 0.3rem;
       }
 
       .header-publish {
-            margin: var(--spacing-sm);
-            font-size: 50%;
+            margin: var(--spacing-md) var(--spacing-lg);
+            font-size: var(--font-md);
       }
 
       h1 {
-            margin: var(--spacing-sm);
-            font-size: 75%;
+            margin: 0 var(--spacing-lg);
+            font-size: var(--font-xl);
       }
 
       .description {
-            margin: 0 var(--spacing-sm);
-            font-size: 55%;
-            padding: 0rem;
+            margin: var(--spacing-md) var(--spacing-lg);
+            font-size: var(--font-md);
+            padding: 0;
       }
 
       .bottom {
-            margin: 0.7rem var(--spacing-sm);
+            margin: 0.7rem var(--spacing-lg);
       }
 
       .bottom p {
-            font-size: var(--spacing-sm);
+            font-size: var(--spacing-md);
       }
       
       .container-footer {
             display: block;
-            margin: 0;
+            margin: var(--spacing-lg);
       }
 
       .container-footer p {
-            padding: 0.2rem;
-            font-size: 50%;
+            padding: var(--spacing-sm);
+            font-size: var(--font-md);
       }
 
       .container-footer p a {
